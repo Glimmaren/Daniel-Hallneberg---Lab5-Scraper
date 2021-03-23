@@ -29,6 +29,7 @@ namespace Daniel_Hallneberg___Lab5_Scraper
             scraper.URL = url;
 
             var htmlString = await scraper.GetHtmlStringAsync(scraper.URL);
+
             scraper.GetImagesInHTMLString(htmlString);
 
             foreach (var item in scraper.PicturesURL)

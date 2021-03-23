@@ -21,7 +21,7 @@ namespace Daniel_Hallneberg___Lab5_Scraper
             
             set 
             {
-                if (!value.Contains("www"))
+                if (!value.Contains("www."))
                 {
                     _uRL = "http://www." + value;
                 }
@@ -113,6 +113,6 @@ namespace Daniel_Hallneberg___Lab5_Scraper
 
             await Task.WhenAny(saveImageTasks);
 
-        } // Int helt övertygad om det va det här du menade med "WhenAny" i beskrivningen men det funkar i alla fall=)
+        }// Inte helt övertygad om det va det här du menade med "WhenAny" i beskrivningen men det funkar i alla fall=)
     }
 }
